@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .property-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            width: 300px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .property-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: gold;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .property-details {
+            padding: 15px;
+        }
+
+        .property-footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: #f9f9f9;
+            font-size: 12px;
+        }
+
+        .property-footer span {
+            display: flex;
+            align-items: center;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .modal-content img, .modal-content video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .property-images {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .property-images img {
+            width: 100px;
+            height: 70px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Product Cards -->
+    <div class="property-card" onclick="openModal(1)">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="https://via.placeholder.com/300x200" alt="Property Image 1">
+                <div class="badge">Premium Plus Listing</div>
+            </div>
+            <div class="property-details">
+                <h3>5 Bedroom Duplex for Sale</h3>
+                <p class="property-location">📍 Ikate, Lekki</p>
+                <p class="property-price">₦480,000,000</p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 5 Beds</span>
+            <span>🛁 5 Baths</span>
+            <span>📏 220 sqm</span>
+        </div>
+    </div>
+
+    <!-- Repeat Product Cards -->
+    <!-- Add similar structure for each property -->
+    <!-- Copy and paste this block six times -->
+    <div class="property-card" onclick="openModal(2)">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="https://via.placeholder.com/300x200" alt="Property Image 2">
+                <div class="badge">Premium Listing</div>
+            </div>
+            <div class="property-details">
+                <h3>4 Bedroom Terrace</h3>
+                <p class="property-location">📍 Victoria Island</p>
+                <p class="property-price">₦350,000,000</p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 4 Beds</span>
+            <span>🛁 4 Baths</span>
+            <span>📏 200 sqm</span>
+        </div>
+    </div>
+
+    <!-- (Add more cards in the same format with unique details) -->
+
+    <!-- Modal -->
+    <div class="modal" id="propertyModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">×</span>
+            <img src="https://via.placeholder.com/600x400" alt="Main Property Image">
+            <video controls>
+                <source src="WhatsApp Video 2025-01-26 at 15.46.44_2ad312a0.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="property-details">
+                <h2>5 Bedroom Detached Duplex for Sale</h2>
+                <p class="property-location">📍 Ota-iku, Ikate, Lekki, Lagos</p>
+                <p class="property-price">₦480,000,000</p>
+            </div>
+            <div class="property-images">
+                <img src="https://via.placeholder.com/100x70" alt="Image 1">
+                <img src="https://via.placeholder.com/100x70" alt="Image 2">
+                <img src="https://via.placeholder.com/100x70" alt="Image 3">
+            </div>
+            <p class="property-description">
+                Exquisite 5-bedroom luxury detached duplex in a secure gated estate.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(cardId) {
+            document.getElementById('propertyModal').style.display = 'flex';
+            // Load specific details based on the cardId (extend functionality as needed)
+        }
+
+        function closeModal() {
+            document.getElementById('propertyModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
