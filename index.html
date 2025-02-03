@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D LIGHT GLOBAL</title>
+    <link rel="icon" type="image/x-icon" href="The light Logo.jpg">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="imgl">
+            <img src="The light Logo.jpg" alt="Logo">
+        </div>
+        <div class="logo">D LIGHT GLOBAL</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="for sale.html">For Sale</a>
+            <a href="#for-rent">For Rent</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find Your Dream Property</h1>
+        <p>Your trusted partner in real estate.</p>
+        <button id="scrollButton">Explore Properties</button>
+    </section>
+
+    <!-- Property Cards -->
+    <div class="property-card" onclick="openModal('modal1')">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503961/WhatsApp_Image_2025-01-26_at_17.00.15_7ff34f0b_ylz80a.jpg" alt="Property Image">
+                
+            </div>
+            <div class="property-details">
+                <h3>Luxury 5-Bedroom Duplex with BQ </h3>
+                <p class="property-location">📍  </p>
+                <p class="property-description">
+                    A stunning 5-bedroom duplex with spacious interiors and a private BQ, located in a secure estate.
+                </p>
+                <p class="property-price"> Sold</p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 5 Bedrooms</span>
+            <span>🛁 5 Bathrooms</span>
+            <span>🚽 6 Toilets</span>
+        </div>
+    </div>
+    
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal1')">×</button>
+            <video controls>
+                 <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738503991/WhatsApp_Video_2025-01-26_at_17.00.14_f2b5b4a4_bydhpv.mp4" type="video/mp4"> 
+                Your browser does not support the video tag.
+            </video>
+            <div class="property-details">
+                <h2>Luxury 5-Bedroom Duplex with BQ</h2>
+                <p class="property-location">📍</p>
+                <p class="property-price"></p>
+            </div>
+            <div class="property-images">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503933/5_bq_pako_zptiy3.jpg" alt="Image 1">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503934/5bq_almoost_vgar6l.jpg" alt="Image 2">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503961/WhatsApp_Image_2025-01-26_at_17.00.15_7ff34f0b_ylz80a.jpg" alt="Image 3">
+            </div>
+            <p class="property-description">
+                A stunning 4-bedroom duplex with spacious interiors and a private BQ, located in a secure estate.
+            </p>
+        </div>
+    </div>
+    
+    <div class="property-card" onclick="openModal('modal2')">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503960/WhatsApp_Image_2025-01-26_at_15.48.01_7d24fe40_ass19w.jpg" alt="Property Image">
+                
+            </div>
+            <div class="property-details">
+                <h3>Modern 4-Bedroom Villa For Sale </h3>
+                <p class="property-location">📍 Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos</p>
+                <p class="property-description">
+                    Experience luxury living in this 4-bedroom villa. Inside a Quadplex.
+                </p>
+                <p class="property-price">-</p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 4 Bedrooms</span>
+            <span>🛁 4 Bathrooms</span>
+            <span>🚽 5 Toilets</span>
+        </div>
+    </div>
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal2')">×</button>
+            <!-- <img src="property2.jpg" alt="Main Property Image"> -->
+            <video  controls="mp4">
+                <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738504029/WhatsApp_Video_2025-01-26_at_15.46.44_2ad312a0_azv0qj.mp4" type="video/mp4">
+            </video>
+            <video controls="mp4">
+                <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738503999/WhatsApp_Video_2025-01-26_at_15.49.07_bb25abbe_vfgotd.mp4" type="video/mp4">
+            </video>
+            <div class="property-details">
+                <h2>Modern 4-Bedroom Villa For Sale</h2>
+                <p class="property-location">📍 Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos </p>
+                <p class="property-price"></p>
+            </div>
+            <div class="property-images">
+                <!-- <img src="property2.jpg" alt="Image 1">
+                <img src="property2a.jpg" alt="Image 2">
+                <img src="property2b.jpg" alt="Image 3"> -->
+            </div>
+            <p class="property-description">
+                Experience luxury living in this 4-bedroom villa. 
+            </p>
+        </div>
+    </div>
+    
+    <div class="property-card" onclick="openModal('modal3')">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503961/WhatsApp_Image_2025-01-26_at_15.48.01_d503826e_yke1ac.jpg" alt="Property Image">
+                
+            </div>
+            <div class="property-details">
+                <h3>Modern 4-Bedroom Villa For Sale</h3>
+                <p class="property-location">📍 Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos </p>
+                <p class="property-description">
+                    Experience luxury living in this 4-bedroom villa. Inside a Quadplex.
+                </p>
+                <p class="property-price"></p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 3 Bedrooms</span>
+            <span>🛁 3 Bathrooms</span>
+            <span>🚽 4 Toilets</span>
+        </div>
+    </div>
+    
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal3')">×</button>
+            
+            <video  controls="mp4">
+                <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738504029/WhatsApp_Video_2025-01-26_at_15.46.44_2ad312a0_azv0qj.mp4" type="video/mp4">
+            </video>
+            <video controls="mp4">
+                <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738503999/WhatsApp_Video_2025-01-26_at_15.49.07_bb25abbe_vfgotd.mp4" type="video/mp4">
+            </video>
+            <div class="property-details">
+                <h2>Modern 4-Bedroom Villa For Sale</h2>
+                <p class="property-location">📍 Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos </p>
+                <p class="property-price"></p>
+            </div>
+            <div class="property-images">
+                <!-- <img src="property3.jpg" alt="Image 1">
+                <img src="property3a.jpg" alt="Image 2">
+                <img src="property3b.jpg" alt="Image 3"> -->
+            </div>
+            <p class="property-description">
+                Experience luxury living in this 4-bedroom villa. Inside a Quadplex.
+            </p> 
+        </div>
+    </div>
+    
+    <div class="property-card" onclick="openModal('modal4')">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503960/WhatsApp_Image_2025-01-26_at_15.48.01_08f53527_xifpfm.jpg" alt="Property Image">
+                
+            </div>
+            <div class="property-details">
+                <h3>Modern 4-Bedroom Villa For Sale</h3>
+                <p class="property-location">📍 Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos</p>
+                <p class="property-description">
+                    Experience luxury living in this 4-bedroom villa. Inside a Quadplex.
+                </p>
+                <p class="property-price"></p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 3 Bedrooms</span>
+            <span>🛁 3 Bathrooms</span>
+            <span>🚽 4 Toilets</span>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal4')">×</button>
+            
+            <video  controls="mp4">
+                <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738504029/WhatsApp_Video_2025-01-26_at_15.46.44_2ad312a0_azv0qj.mp4" type="video/mp4">
+            </video>
+            <video controls="mp4">
+                <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738503999/WhatsApp_Video_2025-01-26_at_15.49.07_bb25abbe_vfgotd.mp4" type="video/mp4">
+            </video>
+            <div class="property-details">
+                <h2>Modern 4-Bedroom Villa For Sale</h2>
+                <p class="property-location">📍 Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos</p>
+                <p class="property-price"></p>
+            </div>
+            <div class="property-images">
+                <!-- <img src="property3.jpg" alt="Image 1">
+                <img src="property3a.jpg" alt="Image 2">
+                <img src="property3b.jpg" alt="Image 3"> -->
+            </div>
+            <p class="property-description">
+                Experience luxury living in this 4-bedroom villa. Inside a Quadplex.
+            </p> 
+        </div>
+    </div>
+    
+    <div class="property-card" onclick="openModal('modal5')">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="https://res.cloudinary.com/dqnpw2vhg/image/upload/v1738503939/idk_uz6moi.jpg" alt="Property Image">
+                <div class="badge"></div>
+            </div>
+            <div class="property-details">
+                <h3>Cozy 4-Bedroom duplex For  Sale</h3>
+                <p class="property-location">📍 Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos</p>
+                <p class="property-description">
+                    A modern 4-bedroom apartment.
+                </p>
+                <p class="property-price"></p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 4 Bedrooms</span>
+            <span>🛁 4 Bathrooms</span>
+            <span>🚽 4 Toilets</span>
+        </div>
+    </div>
+    
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal5')">×</button>
+            <!-- <img src="property5.jpg" alt="Main Property Image"> -->
+            <video controls="mp4">
+                <source src="https://res.cloudinary.com/dqnpw2vhg/video/upload/v1738503967/WhatsApp_Video_2025-01-26_at_17.00.15_64b66b9b_agf6ru.mp4 " type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="property-details">
+                <h2>Cozy 4-Bedroom Apartment</h2>
+                <p class="property-location">📍Ige Estate Gbenaja area, Ikola Road, Ipaja Lagos</p>
+                <p class="property-price"></p>
+            </div>
+            <div class="property-images">
+                <!-- <img src="property5.jpg" alt="Image 1">
+                <img src="property5a.jpg" alt="Image 2">
+                <img src="property5b.jpg" alt="Image 3"> -->
+            </div>
+            <p class="property-description">
+                A modern 4-bedroom apartment.
+            </p>
+        </div>
+    </div>
+    <div class="property-card" onclick="openModal('modal6')">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="WhatsApp_Image_2025-01-26_15.50.01_a12b345.jpg" alt="Property Image">
+                
+            </div>
+            <div class="property-details">
+                <h3>Modern 5-Bedroom Mansion With Pool</h3>
+                <p class="property-location">📍 Banana Island, Lagos</p>
+                <p class="property-description">
+                    Stunning 5-bedroom mansion with private pool, cinema, and fully automated systems.
+                </p>
+                <a href="#" class="details-link">More details</a>
+                <p class="property-price">₦650,000,000</p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 5 Bedrooms</span>
+            <span>🛁 6 Bathrooms</span>
+            <span>🚽 7 Toilets</span>
+            <span>📏 500 sqm</span>
+        </div>
+    </div>
+    
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal6')">×</button>
+            <img src="WhatsApp_Image_2025-01-26_15.50.01_a12b345.jpg" alt="Main Property Image">
+            <video controls>
+                <source src="WhatsApp_Video_2025-01-26_15.47.44_b23c456.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="property-details">
+                <h2>Modern 5-Bedroom Mansion With Pool</h2>
+                <p class="property-location">📍 Banana Island, Lagos</p>
+                <p class="property-price">₦650,000,000</p>
+            </div>
+            <div class="property-images">
+                <img src="WhatsApp_Image_2025-01-26_15.50.01_a12b345.jpg" alt="Image 1">
+                <img src="https://via.placeholder.com/100x70" alt="Image 2">
+                <img src="https://via.placeholder.com/100x70" alt="Image 3">
+            </div>
+            <p class="property-description">
+                This luxurious mansion features five spacious bedrooms, a private pool, a fully equipped cinema, and smart home automation for ultimate convenience.
+            </p>
+        </div>
+    </div>
+    
+    <div class="property-card" onclick="openModal('modal7')">
+        <div class="property-content">
+            <div class="property-image">
+                <img src="WhatsApp_Image_2025-01-26_15.51.02_c34d567.jpg" alt="Property Image">
+                >
+            </div>
+            <div class="property-details">
+                <h3>3-Bedroom Waterfront Apartment</h3>
+                <p class="property-location">📍 Lekki Phase 1, Lagos</p>
+                <p class="property-description">
+                    Elegant 3-bedroom apartment with waterfront views, 24/7 power supply, and modern finishes.
+                </p>
+                <a href="#" class="details-link">More details</a>
+                <p class="property-price">₦85,000,000</p>
+            </div>
+        </div>
+        <div class="property-footer">
+            <span>🛏️ 3 Bedrooms</span>
+            <span>🛁 4 Bathrooms</span>
+            <span>🚽 4 Toilets</span>
+            <span>📏 220 sqm</span>
+        </div>
+    </div>
+    
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('modal7')">×</button>
+            <img src="WhatsApp_Image_2025-01-26_15.51.02_c34d567.jpg" alt="Main Property Image">
+            <video controls>
+                <source src="WhatsApp_Video_2025-01-26_15.48.44_d45e678.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="property-details">
+                <h2>3-Bedroom Waterfront Apartment</h2>
+                <p class="property-location">📍 Lekki Phase 1, Lagos</p>
+                <p class="property-price">₦85,000,000</p>
+            </div>
+            <div class="property-images">
+                <img src="WhatsApp_Image_2025-01-26_15.51.02_c34d567.jpg" alt="Image 1">
+                <img src="https://via.placeholder.com/100x70" alt="Image 2">
+                <img src="https://via.placeholder.com/100x70" alt="Image 3">
+            </div>
+            <p class="property-description">
+                Enjoy luxurious waterfront living in this modern 3-bedroom apartment. Perfect for families or individuals seeking comfort and elegance.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <h2>D Light Global</h2>
+                    <p>Providing quality homes and properties with trust and professionalism.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="https://wa.me/+2348028461682">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                        <li><i class="fas fa-phone-alt"></i>+234 802 846 1682</li>
+                        <li><i class="fas fa-envelope"></i></li>
+                    </ul>
+                </div>
+
+
+
+            <!-- Social Media & Copyright -->
+            <div class="footer-bottom">
+                <p>© 2025 D Light Global. All rights reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
