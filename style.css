@@ -334,3 +334,127 @@ video {
     border-radius: 8px;
     margin-top: 15px;
 }
+
+/* Footer Styling */
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-section h2, 
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-section ul li i {
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #ffcc00;
+}
+
+/* Newsletter Subscription */
+.newsletter .subscribe-box {
+    display: flex;
+    margin-top: 10px;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.subscribe-box button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    transition: 0.3s;
+}
+
+.subscribe-box button:hover {
+    background: #e6b800;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: #bbb;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
