@@ -458,3 +458,8 @@ video {
         margin-top: 10px;
     }
 }
+
+.no-rent {
+    font-size: 50px;
+    color: #d62828;
+}
